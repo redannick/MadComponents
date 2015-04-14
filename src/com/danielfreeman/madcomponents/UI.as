@@ -97,7 +97,7 @@ package com.danielfreeman.madcomponents {
 			}
 			
 			screen.stage.stageFocusRect = false;
-			_simulated = width<0 && (Capabilities.playerType == "StandAlone" || Capabilities.playerType == "PlugIn" || Capabilities.playerType == "ActiveX" || Capabilities.playerType == "External");
+			_simulated = width<0 && (Capabilities.playerType == "Desktop" || Capabilities.playerType == "StandAlone" || Capabilities.playerType == "PlugIn" || Capabilities.playerType == "ActiveX" || Capabilities.playerType == "External");
 			if (xml.@clickColour.length()>0)
 				UIList.HIGHLIGHT = toColourValue(xml.@clickColour[0].toString());
 			
