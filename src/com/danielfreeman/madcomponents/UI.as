@@ -487,7 +487,7 @@ package com.danielfreeman.madcomponents {
 				item.removeChildAt(i);
 			}
 			if (item==_root && _root) {
-				_screen.removeChild(_root);
+				if(_screen.contains(_root)) _screen.removeChild(_root);
 				_root = null;
 			}
 		}
